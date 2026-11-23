@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="680.0" style="-fx-background-color: linear-gradient(to bottom right, #2D6A4F, #1B4332);;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.GameController">
+   <children>
+      <Canvas fx:id="game" focusTraversable="true" height="600.0" layoutX="240.0" layoutY="241.0" onKeyPressed="#setDirection" width="600.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="60.0" />
+      <Text fx:id="text" layoutX="33.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Score: 0" wrappingWidth="177.13671875" AnchorPane.leftAnchor="33.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.018957345971563982">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9450980424880981" green="0.9803921580314636" blue="0.9333333373069763" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.5" green="0.7833333611488342" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+   </children>
+</AnchorPane>
